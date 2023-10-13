@@ -44,3 +44,4 @@ class HttpHandler {
         data['results'].map<Media>((item) => new Media(item, MediaType.show)).toList()));
   }
 }
+
