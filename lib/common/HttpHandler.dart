@@ -26,7 +26,7 @@ class HttpHandler {
         {
           'api_key': API_KEY,
           'page': "1",
-          'languaje': _language
+          'language': _language
         });
     return getJson(uri).then(((data) =>
         data['results'].map<Media>((item) => new Media(item, MediaType.movie)).toList()));
@@ -38,7 +38,7 @@ class HttpHandler {
         {
           'api_key': API_KEY,
           'page': "1",
-          'languaje': _language
+          'language': _language
         });
     return getJson(uri).then(((data) =>
         data['results'].map<Media>((item) => new Media(item, MediaType.show)).toList()));
